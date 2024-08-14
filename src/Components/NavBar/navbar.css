@@ -1,4 +1,5 @@
 .navbar{
+    background: darkslategray;
     height: 5rem;
     width: 100vw;
     max-width: 80%;
@@ -7,6 +8,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    z-index: 3;
+    top: 0;
 }
 
 .logo{
@@ -41,4 +45,51 @@
     justify-content: center;
     padding-right: 1rem;
     border-radius: 2rem;
+    cursor: pointer;
+}
+
+.active{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 10rem;
+    background: rgb(40, 40, 40);
+    border-radius: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.mobileMenu{
+    cursor: pointer;
+    display: none;
+    height: 2rem;
+}
+.listItem{
+    padding: 0.5rem;
+    margin:  0.25rem;
+    background: darkslategray;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+    .mobileMenu{
+        display: flex;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .desktopMenuBtn{
+        display: none;
+    }
 }
