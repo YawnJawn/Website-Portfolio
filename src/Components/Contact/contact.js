@@ -38,8 +38,8 @@ const Contact = () => {
             <textarea className='message' name='message' rows='5' placeholder='Your Message'></textarea>
             <button type='submit' value='Send' className='submitBtn'>Submit</button>
             <div className='links'>
-                <img src={FacebookIcon} alt='facebook' className='link'></img>
-                <img src={InstagramIcon} alt='instagram' className='link'></img>
+                <a href='https://www.facebook.com/'><img src={FacebookIcon} alt='facebook' className='link'></img></a>
+                <a href='https://www.instagram.com/'><img src={InstagramIcon} alt='instagram' className='link'></img></a>
             </div>
         </form>
     </section>
