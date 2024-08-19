@@ -7,7 +7,7 @@ import Tim from '../../assets/tim.jpg'
 const Resource = () => {
   return (
     <section id='resource'> 
-      <h1>Resources</h1>
+      <h1 className='header'>Resources</h1>
       <h3>Some of the resources I have used along in my projects are:</h3>
       <div className='sources'>
         <div className='source'>

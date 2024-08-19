@@ -19,9 +19,11 @@
 .source{
     margin: 20px 20px;
     width: 200px;
-
 }
 
+.header{
+    margin-bottom: 15px;
+}
 .image{
     border-radius: 50%;
 }
